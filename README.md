@@ -1,0 +1,1 @@
+# -rea-pastoral-S-o-Bartolomeu-e-Santa-Rita---dizimos
