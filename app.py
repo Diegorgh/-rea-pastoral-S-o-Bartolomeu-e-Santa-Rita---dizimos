@@ -39,11 +39,14 @@ with col_form:
         botao = st.form_submit_button("Gerar Pagamento")
 
 with col_img:
-    # LINK CORRIGIDO BASEADO NO TEU REPOSITÓRIO GITHUB
+    # Este é o link público que o Render consegue ver:
     url_foto = "https://raw.githubusercontent.com/Diegorgh/-rea-pastoral-S-o-Bartolomeu-e-Santa-Rita---dizimos/main/Copia-de-Noticias-51.jpg"
     
-    st.image(url_foto, use_container_width=True)
-
+    try:
+        st.image(url_foto, use_container_width=True)
+    except:
+        st.error("Não foi possível carregar a imagem do GitHub.")
+    
 # 4. Ação após o clique no botão
 if botao:
     if nome and cpf:
